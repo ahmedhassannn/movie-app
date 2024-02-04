@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap');
+ :root{
+  --bg-color: #131620;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+    --light-bg:#24baef;
+  --fontcolor:#fff;
+  --border-color: #a8a8a83d;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  font-family: var(--mainfont);
+  color: var(--fontcolor);
+
+
+}
+nav{
+  background-color: var(--bg-color);
+  z-index: 1000;
+}
+.nav-link{
+  font-size: 1.3rem;
+}
+.home-div , .register-div , .login-div , .item-details{
+  margin-top: 5rem;
+}
+.navbar-toggler{
+  border-color: rgb(254, 254, 254);
+} 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-brand {
+  color: #fff;
+  font-size: 3rem;
+}
+
+
+
+.nav-btn::before {
+  margin-left: auto;
+}
+
+.nav-btn{
+  list-style: none;
+}
+.nav-btn::after, 
+.nav-btn::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--light-bg);
+  display: block;
+  transition: 0.5s;
+}
+
+
+.nav-btn:hover::after,
+.nav-btn:hover::before {
+  width: 100%;
+}
+
+
+
+.hover_img{
+  transition:all .3s ease-in-out ;
+}
+.hover_img:hover{
+  transform: scale(1.1);  
+}
+.subtitle_home{
+  color:  #b6a6a686;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.brdr{
+  height: 1px;
+  background-color: var(--border-color);
+}
+a {
+  text-decoration: none;
+  color: var(--fontcolor);
+
+}
+
+.my-inbut{
+  background-color: transparent;
+  border: solid 1px var(--border-color) ;
+}
+.vote{
+  background-color: var(--light-bg);
+  color: #131620;
+}
+
+.offline{
+  background-color: var(--bg-color);
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  padding: 1.5rem;
+  box-shadow: 5px 5px  2px 5px var(--border-color);
+  z-index: 10000;
+}
+.item-details{
+  height: 80vh;
+}
+
+.footer-section{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
